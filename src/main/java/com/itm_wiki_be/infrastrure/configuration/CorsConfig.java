@@ -11,15 +11,15 @@ import java.util.Arrays;
 @Configuration
 public class CorsConfig implements CorsConfigurationSource {
 
-    @Value("${domain.socket}")
-    private String domainClient;
+    @Value("${domain.client}")
+    private String domainClients;
 
     @Override
     public CorsConfiguration getCorsConfiguration(HttpServletRequest request) {
         CorsConfiguration corsConfiguration = new CorsConfiguration();
-        corsConfiguration.setAllowedOrigins(Arrays.asList(domainClient));
+        corsConfiguration.setAllowedOrigins(Arrays.asList(domainClients.split(", ")));
         corsConfiguration.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "PATCH"));
-        corsConfiguration.setAllowedHeaders(Arrays.asList("Content-Type", "Authorization"));
+        corsConfiguration.setAllowedHeaders(Arrays.asList("Content-Type", "sso-token"));
         corsConfiguration.setMaxAge(3600L);
         corsConfiguration.setAllowCredentials(true);
         return corsConfiguration;
