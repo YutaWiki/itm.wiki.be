@@ -5,7 +5,10 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class PageableRequest {
-    private int page = PaginationConstant.DEFAULT_PAGE;
+public abstract class PageableRequest {
+
+    private int current = PaginationConstant.DEFAULT_PAGE;
     private int size = PaginationConstant.DEFAULT_SIZE;
+    private String sortField = "id";
+    private String sortType = "";
 }
