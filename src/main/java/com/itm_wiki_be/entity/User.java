@@ -21,16 +21,16 @@ import org.hibernate.annotations.Nationalized;
 @Table(name = "user")
 public class User extends PrimaryBase {
 
-    @Column(name = "name")
+    @Column
     @Nationalized
     private String name;
 
-    @Column(name = "email", length = EntityProperties.LENGTH_EMAIL)
+    @Column(length = EntityProperties.LENGTH_EMAIL)
     private String email;
 
-    @Column(name = "phone_number", length = EntityProperties.LENGTH_PHONE)
+    @Column(length = EntityProperties.LENGTH_PHONE)
     private String phoneNumber;
 
-    @Column(name = "organization_id", length = EntityProperties.LENGTH_ID)
+    @Column(length = EntityProperties.LENGTH_ID)
     private String organizationId;
 }

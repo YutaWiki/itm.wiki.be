@@ -17,6 +17,6 @@ public abstract class PrimaryBase extends AuditEntity
         implements IsIdentified {
 
     @Id
-    @Column(name = "id", length = EntityProperties.LENGTH_ID, updatable = false)
+    @Column(length = EntityProperties.LENGTH_ID, updatable = false)
     private String id;
 }

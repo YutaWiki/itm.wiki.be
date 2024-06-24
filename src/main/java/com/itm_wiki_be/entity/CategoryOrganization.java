@@ -20,7 +20,7 @@ import org.hibernate.annotations.Nationalized;
 @Table(name = "category_organization")
 public class CategoryOrganization extends PrimaryBase {
 
-    @Column(name = "name")
+    @Column
     @Nationalized
     private String name;
 

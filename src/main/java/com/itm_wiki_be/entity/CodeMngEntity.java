@@ -19,15 +19,15 @@ import org.hibernate.annotations.Immutable;
 @Table(name = "code_mng")
 public class CodeMngEntity extends PrimaryBase {
 
-    @Column(name = "cd_id")
+    @Column
     private String cdId;
 
-    @Column(name = "cd_category")
+    @Column
     private String cdCategory;
 
-    @Column(name = "cd_name")
+    @Column
     private String cdName;
 
-    @Column(name = "cd_key")
+    @Column
     private String cdKey;
 }

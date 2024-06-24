@@ -21,29 +21,29 @@ import org.hibernate.annotations.Nationalized;
 @Table(name = "organization")
 public class Organization extends PrimaryBase {
 
-    @Column(name = "name")
+    @Column
     @Nationalized
     private String name;
 
-    @Column(name = "username", length = EntityProperties.LENGTH_NAME)
+    @Column(length = EntityProperties.LENGTH_NAME)
     private String username;
 
-    @Column(name = "category_organization_id", length = EntityProperties.LENGTH_ID)
+    @Column(length = EntityProperties.LENGTH_ID)
     private String categoryOrganizationId;
 
-    @Column(name = "email", length = EntityProperties.LENGTH_EMAIL)
+    @Column(length = EntityProperties.LENGTH_EMAIL)
     private String email;
 
-    @Column(name = "phone_number", length = EntityProperties.LENGTH_PHONE)
+    @Column(length = EntityProperties.LENGTH_PHONE)
     private String phoneNumber;
 
-    @Column(name = "address", length = EntityProperties.LENGTH_DESCRIPTION)
+    @Column(length = EntityProperties.LENGTH_DESCRIPTION)
     @Nationalized
     private String address;
 
-    @Column(name = "tax_code", length = EntityProperties.LENGTH_CODE)
+    @Column(length = EntityProperties.LENGTH_CODE)
     private String taxCode;
 
-    @Column(name = "url_image_logo", length = EntityProperties.LENGTH_URL)
+    @Column(length = EntityProperties.LENGTH_URL)
     private String urlImageLogo;
 }

@@ -15,18 +15,18 @@ import java.io.Serializable;
 @EntityListeners(AuditEntityListener.class)
 public abstract class AuditEntity implements Serializable {
 
-    @Column(name = "created_date", updatable = false)
+    @Column(updatable = false)
     private Long createdDate;
 
-    @Column(name = "last_modified_date")
+    @Column
     private Long lastModifiedDate;
 
-    @Column(name = "created_by", updatable = false)
+    @Column(updatable = false)
     private String createdBy;
 
-    @Column(name = "last_modified_by")
+    @Column
     private String lastModifiedBy;
 
-    @Column(name = "delete_flag")
+    @Column
     private Integer deleteFlag = 0;
 }

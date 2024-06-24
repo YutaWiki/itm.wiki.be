@@ -21,21 +21,21 @@ import java.util.UUID;
 @Table(name = "file_mng")
 public class FileMngEntity extends PrimaryBase {
 
-    @Column(name = "file_name")
+    @Column
     private String fileName;
 
-    @Column(name = "file_type")
+    @Column
     private String fileType;
 
-    @Column(name = "file_size")
+    @Column
     private Long fileSize;
 
-    @Column(name = "filePath")
+    @Column
     private String filePath;
 
-    @Column(name = "producer_code")
+    @Column
     private String producerCode;
 
-    @Column(name = "producer_id")
+    @Column
     private UUID producerId;
 }
