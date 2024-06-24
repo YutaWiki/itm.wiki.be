@@ -1,22 +1,22 @@
 package com.itm_wiki_be.entity.base;
 
+import com.itm_wiki_be.infrastructure.constant.EntityProperties;
+import com.itm_wiki_be.infrastructure.listener.CreatePrimaryEntityListener;
 import jakarta.persistence.Column;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
+import jakarta.persistence.EntityListeners;
 import jakarta.persistence.Id;
 import jakarta.persistence.MappedSuperclass;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.util.UUID;
-
 @Getter
 @Setter
 @MappedSuperclass
-public abstract class PrimaryBase extends AuditEntity implements IsIdentified {
+@EntityListeners(CreatePrimaryEntityListener.class)
+public abstract class PrimaryBase extends AuditEntity
+        implements IsIdentified {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(updatable = false, nullable = false)
-    private UUID id;
+    @Column(name = "id", length = EntityProperties.LENGTH_ID, updatable = false)
+    private String id;
 }

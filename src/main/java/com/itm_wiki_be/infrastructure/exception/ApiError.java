@@ -1,4 +1,4 @@
-package com.itm_wiki_be.infrastrure.exception;
+package com.itm_wiki_be.infrastructure.exception;
 
 
 import lombok.AllArgsConstructor;

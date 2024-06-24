@@ -1,4 +1,4 @@
-package com.itm_wiki_be.infrastrure.swagger;
+package com.itm_wiki_be.infrastructure.swagger;
 
 import org.springdoc.core.models.GroupedOpenApi;
 import org.springframework.context.annotation.Bean;

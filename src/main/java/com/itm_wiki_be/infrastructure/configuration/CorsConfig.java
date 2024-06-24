@@ -1,4 +1,4 @@
-package com.itm_wiki_be.infrastrure.configuration;
+package com.itm_wiki_be.infrastructure.configuration;
 
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Value;

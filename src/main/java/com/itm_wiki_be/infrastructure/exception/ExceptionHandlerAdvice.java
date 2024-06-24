@@ -1,4 +1,4 @@
-package com.itm_wiki_be.infrastrure.exception;
+package com.itm_wiki_be.infrastructure.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

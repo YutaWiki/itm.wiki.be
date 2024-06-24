@@ -1,7 +1,7 @@
-package com.itm_wiki_be.infrastrure.listener;
+package com.itm_wiki_be.infrastructure.listener;
 
 import com.itm_wiki_be.entity.base.AuditEntity;
-import com.itm_wiki_be.infrastrure.constant.IsDelete;
+import com.itm_wiki_be.infrastructure.constant.IsDelete;
 import jakarta.persistence.PrePersist;
 import jakarta.persistence.PreUpdate;
 
@@ -13,7 +13,6 @@ public class AuditEntityListener {
     private void onCreate(AuditEntity entity) {
         entity.setCreatedDate(getCurrentTime().getTime());
         entity.setLastModifiedDate(getCurrentTime().getTime());
-        entity.setIsDelete(IsDelete.ACTIVE);
     }
 
     @PreUpdate

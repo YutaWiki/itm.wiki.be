@@ -1,6 +1,6 @@
 package com.itm_wiki_be.util;
 
-import com.itm_wiki_be.infrastrure.constant.Constants;
+import com.itm_wiki_be.infrastructure.constant.Constants;
 import lombok.extern.slf4j.Slf4j;
 
 import java.io.IOException;

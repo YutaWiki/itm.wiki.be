@@ -1,7 +1,7 @@
 package com.itm_wiki_be.util;
 
-import com.itm_wiki_be.infrastrure.constant.Constants;
-import com.itm_wiki_be.infrastrure.constant.LanguageConstants;
+import com.itm_wiki_be.infrastructure.constant.Constants;
+import com.itm_wiki_be.infrastructure.constant.LanguageConstants;
 import jakarta.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
